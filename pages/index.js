@@ -54,7 +54,7 @@ export class index extends Component {
                     <>
                     {this.props.posts.map((data)=>{
                         return(
-                            <List divided verticalAlign='middle'>
+                            <List divided verticalAlign='middle' key={data._id}>
                                 <List.Item>
                                     <List.Content floated='right'>
                                         <Link href={`/view/${data._id}`}><Button size='mini'>View</Button></Link>
