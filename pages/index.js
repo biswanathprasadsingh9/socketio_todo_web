@@ -19,7 +19,7 @@ export class index extends Component {
         }
     }
 
-    async componentDidMount(){
+    componentDidMount(){
         // socket.on('all_todos',data=>{
         //   console.log(data)
         //   this.setState({
@@ -27,6 +27,9 @@ export class index extends Component {
         //     datas:data
         //   })
         // })
+        console.log(socket.Socket)
+        
+       
     }
 
     handleDelete=e=>{
@@ -37,7 +40,6 @@ export class index extends Component {
     }
 
     render() {
-        console.log(this.props.posts)
         return (
             <Container>
                 <br /><br /><br />

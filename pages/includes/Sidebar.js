@@ -17,7 +17,7 @@ export class Sidebar extends Component {
         }
 
         var b = _.filter(this.props.posts, function(o) { if (o.status === false) return o }).length;
-        console.log(b)
+        // console.log(b)
 
         return (
             <Menu vertical>
